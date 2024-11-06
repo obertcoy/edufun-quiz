@@ -18,7 +18,7 @@
                         @foreach ($article_categories as $category)
                             <li><a class="dropdown-item"
                                     href={{ route('category', ['category_id' => $category->id]) }}>{{ $category->category_name }}</a>
-                            </li>
+                        </li>
                         @endforeach
                     </ul>
                 </li>

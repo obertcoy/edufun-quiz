@@ -59,7 +59,7 @@ class ArticleController extends Controller
 
         $articles = Article::orderby('title', 'asc')->paginate(3);
 
-        return view('pages.popular', compact('articles'));
+    return view('pages.popular', compact('articles'));
     }
 
     /**
