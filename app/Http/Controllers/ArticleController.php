@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use App\Models\ArticleCategory;
 use Illuminate\Http\Request;
 
 class ArticleController extends Controller
@@ -41,6 +42,24 @@ class ArticleController extends Controller
         $article = $article->load("article_category");
 
         return view('pages.details.article', compact('article'));
+    }
+
+    public function show_by_category(string $category_id)
+    {
+        //
+
+        $articles_by_category = ArticleCategory::with('articles')->find($category_id);
+
+
+        return view('pages.category', compact('articles_by_category'));
+    }
+
+    public function show_popular()
+    {
+
+        $articles = Article::orderby('title', 'asc')->paginate(3);
+
+        return view('pages.popular', compact('articles'));
     }
 
     /**

@@ -11,7 +11,7 @@
 
         <h4>{{ $article->title }}</h4>
 
-        <span>{{ $article->timestamp }} | by: {{ $article->writer->name }}</span>
+        <span>{{ $article->created_at->format('d F Y') }} | by: {{ $article->writer->name }}</span>
 
         <p class="text-truncate w-50">{{ $article->body }}</p>
 

@@ -30,50 +30,50 @@ class ArticleSeeder extends Seeder
         $articles = [
             [
                 'title' => 'Understanding Human and Computer Interaction',
-                'body' => $faker->paragraph(),
-                'image_path' => 'assets/seed/articles/1.png',
+                'body' => $faker->paragraphs(3, true),
+                'image_path' => '/assets/seed/articles/1.png',
                 'article_category_id' => 1
             ],
             [
                 'title' => 'Design Patterns in Software Engineering',
-                'body' => $faker->paragraph(),
-                'image_path' => 'assets/seed/articles/3.jpeg',
+                'body' => $faker->paragraphs(3, true),
+                'image_path' => '/assets/seed/articles/3.jpeg',
                 'article_category_id' => 2
             ],
             [
                 'title' => 'Human and Computer Interaction',
-                'body' => $faker->paragraph(),
-                'image_path' => 'assets/seed/articles/1.png',
+                'body' => $faker->paragraphs(3, true),
+                'image_path' => '/assets/seed/articles/1.png',
                 'article_category_id' => 1
             ],
             [
                 'title' => 'User Experience',
-                'body' => $faker->paragraph(),
-                'image_path' => 'assets/seed/articles/2.jpeg',
+                'body' => $faker->paragraphs(3, true),
+                'image_path' => '/assets/seed/articles/2.jpeg',
                 'article_category_id' => 1
             ],
             [
                 'title' => 'User Experience for Digital Immersive Technology',
-                'body' => $faker->paragraph(),
-                'image_path' => 'assets/seed/articles/2.jpeg',
+                'body' => $faker->paragraphs(3, true),
+                'image_path' => '/assets/seed/articles/2.jpeg',
                 'article_category_id' => 1
             ],
             [
                 'title' => 'Pattern Software Design',
-                'body' => $faker->paragraph(),
-                'image_path' => 'assets/seed/articles/3.jpeg',
+                'body' => $faker->paragraphs(3, true),
+                'image_path' => '/assets/seed/articles/3.jpeg',
                 'article_category_id' => 2
             ],
             [
                 'title' => 'Agile Software Development',
-                'body' => fake()->paragraph(),
+                'body' => fake()->paragraphs(3, true),
                 'image_path' => 'assets/seed/articles/4.jpeg',
                 'article_category_id' => 2
             ],
             [
                 'title' => 'Code Reengineering',
-                'body' => $faker->paragraph(),
-                'image_path' => 'assets/seed/articles/4.jpeg',
+                'body' => $faker->paragraphs(3, true),
+                'image_path' => '/assets/seed/articles/4.jpeg',
                 'article_category_id' => 2
             ],
         ];
