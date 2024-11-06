@@ -15,7 +15,7 @@ class Article extends Model
         return $this->belongsTo(Writer::class);
     }
 
-    public function articleCategory()
+    public function article_category()
     {
         return $this->belongsTo(ArticleCategory::class);
     }

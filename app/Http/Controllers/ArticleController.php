@@ -37,6 +37,10 @@ class ArticleController extends Controller
     public function show(Article $article)
     {
         //
+
+        $article = $article->load("article_category");
+
+        return view('pages.details.article', compact('article'));
     }
 
     /**
